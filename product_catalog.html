@@ -1,0 +1,30 @@
+<!-- https://www.adobe.com/products/catalog.html -->
+
+<div className="col-md-3 card">
+    <a href="">
+        <img
+            className="product_icon"
+            src={this.props.productIcon}/>
+    </a>
+
+    <h3 className="text-3-block">
+        {this.props.productTitle}
+    </h3>
+
+    <p>
+        {this.props.productDescription}
+    </p>
+
+    <div className="catalog-links">
+        <p className="catalog-cta">
+            <a>
+                {this.props.freeTrialText}
+            </a>
+        </p>
+        <p className="catalog-buttons">
+            <a href="">
+                {this.props.buyNowtext}
+            </a>
+        </p>
+    </div>
+</div>

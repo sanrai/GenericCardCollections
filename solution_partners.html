@@ -1,0 +1,26 @@
+<!-- https://solutionpartners.adobe.com/home/partnerFinder.html -->
+
+<div className="col-lg-4 col-sm-6 card">
+    <div className="partner-finder-result">
+        <div className="ribbon">{this.props.ribbonText}</div>
+        <div className="partner-finder-result-preview">
+            <div className="preview-image">
+                <img src={this.props.cardImg}/>
+            </div>
+            <div className="preview-text">
+                <h4 className="flatten-vertical">{this.props.partnerName}</h4>
+                <span>{this.props.partnerLevel}</span>
+            </div>
+        </div>
+        <div className="partner-finder-result-info">
+            <h4 className="flatten-vertical">{this.props.partnerName}</h4>
+            <span>{this.props.partnerLevel}</span>
+            <p className="small">
+                {this.props.description}
+            </p>
+            <a className="btn btn-primary btn-md" href="">
+                more info
+            </a>
+        </div>
+    </div>
+</div>
