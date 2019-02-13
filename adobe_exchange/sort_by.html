@@ -1,0 +1,94 @@
+<div className="col-md-12">
+    <div className="exhibit-sort">
+        <div className="free-paid">
+            <span
+                className="free-paid-active">
+                    All
+            </span>
+            <span
+                className="free-paid-inactive free-paid-middle">
+                Paid
+            </span>
+            <span
+                className="free-paid-inactive">
+                    Free
+            </span>
+            <span
+                className="free-paid-spacer">
+                    |
+            </span>
+        </div>
+        <div
+            className="wrapper-dropdown">
+            <span
+                className="dropdown-sort">
+                    Sorted by:
+            </span>
+            <span
+                className="dropdown-title">
+                {store.getState().sortBy.sortedBy}
+            </span>
+            <ul
+                className="sort-dropdown">
+                <li
+                    className="sort-dropdown-option selected">
+                    <span
+                        onClick={
+                            () => {store.dispatch({ type: 'SORT_BY', sortBy: 'popular' })}}
+                        className="dropdown-value">
+                            Most popular
+                    </span>
+                    <i
+                        className="fa fa-check sort-dropdown-icon"/>
+                </li>
+                <li
+                    className="sort-dropdown-option">
+                    <span
+                        className="dropdown-value">
+                            Most recent
+                    </span>
+                    <i
+                        className="fa fa-check sort-dropdown-icon"/>
+                </li>
+                <li
+                    className="sort-dropdown-option ">
+                    <span
+                        className="dropdown-value">
+                            Title (A-Z)
+                    </span>
+                    <i
+                        className="fa fa-check sort-dropdown-icon"/>
+                </li>
+                <li
+                    className="sort-dropdown-option ">
+                    <span
+                        onClick={
+                            () => {store.dispatch({ type: 'SORT_BY', sortBy: 'rating' })}}
+                        className="dropdown-value">
+                        Rating
+                    </span>
+                    <i
+                        className="fa fa-check sort-dropdown-icon"/>
+                </li>
+                <li
+                    className="sort-dropdown-option">
+                    <span
+                        className="dropdown-value">
+                            Price (Low to High)
+                    </span>
+                    <i
+                        className="fa fa-check sort-dropdown-icon"/>
+                </li>
+                <li className="sort-dropdown-option">
+                    <span
+                        className="dropdown-value">
+                        Price (High to Low)
+                    </span>
+                    <i
+                        className="fa fa-check sort-dropdown-icon"/>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+<div className="col-md-12">
+    <pagination>
+        <section id="pagination">
+            <span>
+                Page
+            </span>
+            <ul>
+                <li>
+                    1
+                </li>
+                <li>
+                    <button
+                        className="pagebutton"
+                        id="pagination-2">
+                        2
+                    </button>
+                </li>
+                <li>
+                    <button
+                        className="pagebutton"
+                        id="pagination-3">
+                        3
+                    </button>
+                </li>
+                <li>
+                    <button
+                        className="pagebutton"
+                        id="pagination-4">
+                        4
+                    </button>
+                </li>
+                <li>
+                    <button
+                        className="pagebutton"
+                        id="pagination-5">
+                        5
+                    </button>
+                </li>
+
+                <li>
+                    <button
+                        className="pagebutton">
+                        6
+                    </button>
+                </li>
+                <li>
+                    <button
+                        className="pagebutton"
+                        id="pagination-7">
+                        7
+                    </button>
+                </li>
+                <li>
+                    <button
+                        className="pagebutton"
+                        id="pagination-8">
+                        8
+                    </button>
+                </li>
+                <li>
+                    <button
+                        className="pagebutton"
+                        id="pagination-9">
+                        9
+                    </button>
+                </li>
+                <li>
+                    <button
+                        className="pagebutton">
+                        10
+                    </button>
+                </li>
+            </ul>
+            <button
+                onClick={() => {store.dispatch({ type: 'INCREMENT_PAGE'})}}
+                className="pagebutton">
+                Next
+                <i className="fa-forward"/>
+            </button>
+            <button
+                onClick={() => {store.dispatch({ type: 'GO_TO_LAST_PAGE'})}}
+                className="pagebutton">
+                <i className="fa-step-forward"/>
+            </button>
+        </section>
+    </pagination>
+</div>
